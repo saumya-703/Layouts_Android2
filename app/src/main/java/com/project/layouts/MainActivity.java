@@ -3,28 +3,28 @@ package com.project.layouts;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
-import android.widget.RadioButton;
+import android.widget.RadioGroup;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
-
-    RadioButton pb,gs,lb;
+    RadioGroup rg;
     Button submit;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        pb=findViewById(R.id.pb);
-        gs=findViewById(R.id.gs);
-        lb=findViewById(R.id.lb);
+        rg= findViewById(R.id.rg);
         submit=findViewById(R.id.submit);
 
-        show();
+        show( );
     }
 
     public void show() {
         submit.setOnClickListener((view -> {
-            int k= pb.getChecke
+            int k=rg.getCheckedRadioButtonId();
+            Toast.makeText(MainActivity.this,"Selected", Toast.LENGTH_SHORT).show();
         }));
     }
 }
