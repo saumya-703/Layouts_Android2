@@ -95,21 +95,21 @@
         android:orientation="horizontal">
 
         <RadioButton
-            android:id="@+id/radioButton2"
+            android:id="@+id/pb"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="Pitbull" />
 
         <RadioButton
-            android:id="@+id/radioButton3"
+            android:id="@+id/gs"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="German Shepherd" />
 
         <RadioButton
-            android:id="@+id/radioButton4"
+            android:id="@+id/lb"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -123,14 +123,14 @@
         android:orientation="vertical">
 
         <Button
-            android:id="@+id/button3"
+            android:id="@+id/submit"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginTop="30dp"
             android:width="250dp"
             android:height="60dp"
-            android:text="Button"
+            android:text="Submit"
             app:cornerRadius="8sp" />
     </LinearLayout>
 </LinearLayout>
